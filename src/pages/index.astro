@@ -1,7 +1,9 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
 import Badge from "../components/Badge.astro"
+import LinkedinIcon from "../components/icons/Linkedin.astro"
+import GithubIcon from '../components/icons/Github.astro';
+import SocialPill from "../components/SocialPill.astro"
 ---
 
 <Layout title="Welcome to Astro.">
@@ -24,6 +26,15 @@ import Badge from "../components/Badge.astro"
 			<h2 class="text-2xl opacity-80 text-wrap justifify-content">+7 years of Professional experience. <span class="text-yellow-200/90">Web Developer and business Administrator.</span>
 			From Bogota Colombia living in Mexico City. I recently complete the Professional Certification of Meta.
 			</h2>
+
+			<nav class="flex gap-x-2 mt-8">
+					<SocialPill href="https://www.linkedin.com/in/andresfrancolangthon/">
+						<LinkedinIcon class="w-6 h-6"/>LinkedIn </svg>
+					</SocialPill>
+					<SocialPill href="https://github.com/Andresfrla">
+						<GithubIcon class="w-6 h-6"/>Github </svg>
+					</SocialPill>
+			</nav>
 		</section>
 	</main>
 </Layout>
