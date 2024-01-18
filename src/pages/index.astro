@@ -1,10 +1,30 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
+import Badge from "../components/Badge.astro"
 ---
 
 <Layout title="Welcome to Astro.">
 	<main>
+		<section class="w-full mx-auto lg:w-[740px] py-44">
+			<div class="flex justify-center">
+			<img class="rounded-full w-60 h-60 mb-7"
+   			src="https://i.ibb.co/xgbs4mz/andres.jpg"
+    		alt="Andres photo">
+			</div>
+			<h1 class="text-white text-5xl font-bold flex justify-start flex-row gap-x-4 pb-10">
+			Hi I'm Andres <div class="flex justify-center items-center">
+			<a
+			href="https://www.linkedin.com/in/andresfrancolangthon/"
+			target="_blank"
+			rel="noopener"
+			class="flex justify-center items-center"
+			>
+				<Badge> Available for hire</Badge></a></div></h1>
+			<h2 class="text-2xl opacity-80 text-wrap justifify-content">+7 years of Professional experience. <span class="text-yellow-200/90">Web Developer and business Administrator.</span>
+			From Bogota Colombia living in Mexico City. I recently complete the Professional Certification of Meta.
+			</h2>
+		</section>
 	</main>
 </Layout>
 
