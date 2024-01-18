@@ -3,14 +3,17 @@ import Layout from '../layouts/Layout.astro';
 import Badge from "../components/Badge.astro"
 import LinkedinIcon from "../components/icons/Linkedin.astro"
 import GithubIcon from '../components/icons/Github.astro';
+import GmailIcon from '../components/icons/Gmail.astro'
 import SocialPill from "../components/SocialPill.astro"
 ---
 
-<Layout title="Welcome to Astro.">
+<Layout
+title="Portfolio -Andres Franco L- Programmer and Web Developer"
+description="Hire a good programmer for your web or your mobile App">
 	<main>
 		<section class="w-full mx-auto lg:w-[740px] py-44">
 			<div class="flex justify-center">
-			<img class="rounded-full w-60 h-60 mb-7"
+			<img class="rounded-full size-60 mb-7"
    			src="https://i.ibb.co/xgbs4mz/andres.jpg"
     		alt="Andres photo">
 			</div>
@@ -27,12 +30,15 @@ import SocialPill from "../components/SocialPill.astro"
 			From Bogota Colombia living in Mexico City. I recently complete the Professional Certification of Meta.
 			</h2>
 
-			<nav class="flex gap-x-2 mt-8">
+			<nav class="flex gap-x-4 mt-8">
 					<SocialPill href="https://www.linkedin.com/in/andresfrancolangthon/">
-						<LinkedinIcon class="w-6 h-6"/>LinkedIn </svg>
+						<LinkedinIcon class="size-6"/>LinkedIn </svg>
 					</SocialPill>
 					<SocialPill href="https://github.com/Andresfrla">
-						<GithubIcon class="w-6 h-6"/>Github </svg>
+						<GithubIcon class="size-6"/>Github </svg>
+					</SocialPill>
+					<SocialPill href="https://github.com/Andresfrla">
+						<GmailIcon class="size-6"/>andresfranla@gmail.com </svg>
 					</SocialPill>
 			</nav>
 		</section>
