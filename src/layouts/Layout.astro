@@ -62,4 +62,14 @@ const { description, title } = Astro.props
       color: rgba(255, 255, 255, 0.9);
     }
   }
+
+  @media (max-width: 768px) {
+  .projects ul {
+    flex-wrap: wrap; /* Allow tags to wrap to multiple lines */
+  }
+
+  .projects li {
+    width: 50%; /* Adjust width as needed */
+  }
+}
 </style>
