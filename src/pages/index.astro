@@ -4,15 +4,17 @@ import Badge from "../components/Badge.astro"
 import LinkedinIcon from "../components/icons/Linkedin.astro"
 import GithubIcon from '../components/icons/Github.astro';
 import GmailIcon from '../components/icons/Gmail.astro'
+import Certificate from '../components/icons/Certificate.astro'
 import SocialPill from "../components/SocialPill.astro"
 import Experience from '../components/Experience.astro';
+import SectionContainer from '../components/SectionContainer.astro';
 ---
 
 <Layout
 title="Portfolio -Andres Franco L- Programmer and Web Developer"
 description="Hire a good programmer for your web or your mobile App">
 	<main>
-		<section class="w-full mx-auto lg:w-[740px] py-40 text-white">
+		<SectionContainer class="py-44 pb-24">
 			<div class="flex justify-center">
 			<img class="rounded-full size-60 mb-7"
    			src="https://i.ibb.co/xgbs4mz/andres.jpg"
@@ -28,7 +30,7 @@ description="Hire a good programmer for your web or your mobile App">
 			>
 				<Badge> Available for hire</Badge></a></div></h1>
 			<h2 class="text-2xl opacity-80 text-wrap justifify-content">+7 years of Professional experience. <span class="text-red-300/90">Web Developer and business Administrator.</span>
-			From Bogota Colombia living in Mexico City. I recently complete the Professional Certification of Meta.
+			<span class="text-yellow-200">From Bogota Colombia living in Mexico City.</span> I recently complete the Professional Certification of Meta.
 			</h2>
 
 			<nav class="flex gap-x-4 mt-8">
@@ -42,10 +44,14 @@ description="Hire a good programmer for your web or your mobile App">
 						<GmailIcon class="size-6"/>andresfranla@gmail.com </svg>
 					</SocialPill>
 			</nav>
-		</section>
-		<section>
+		</SectionContainer>
+		<SectionContainer id="experience">
+			<h2 class="text-2xl font-semibold mb-6 flex gap-x-3 item-center">
+				<Certificate class="size-8"/>
+				Certificates
+			</h2>
 			<Experience />
-		</section>
+		</SectionContainer>
 	</main>
 </Layout>
 
