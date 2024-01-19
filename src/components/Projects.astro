@@ -1,0 +1,43 @@
+---
+const PROJECTS = [
+    {
+        title: 'Unibook-Pro. for Jeblush',
+        description: 'Created from scratch with React.Developed a full-stack RESTful application for a renowned beauty salon in Mexico City, designed to streamline their service reservations.',
+        link: 'https://unibookpro-app.netlify.app/',
+        github: 'https://github.com/Andresfrla/unibook-pro-client',
+        image: '/projects/jeblush.webp',
+        tags: ['React Js', 'HTML', 'CSS', 'MongoDB', 'NodeJs']
+    },
+    {
+        title: 'LOL-Wiki',
+        description: 'This project is a dynamic app designed to tap into the League of Legends API. Developed using Bootstrap and Handlebars, the app presents a user-friendly interface that brings detailed game insights to the players',
+        link: '',
+        github: 'https://github.com/Andresfrla/LOL-Wiki',
+        image: '/projects/LOL.webp',
+        tags: ['Handlebars', 'HTML', 'CSS']
+    },
+    {
+        title: 'Vampire VS Zombies',
+        description: 'Navigate a world where a vampire avoids zombies using canvas-rendered visuals. Consume pumpkins to transform and turn the undead into your prey. A captivating game crafted with HTML, CSS, and JavaScript.',
+        link: 'https://andresfrla.github.io/vampires-vs-zombies/',
+        github: 'https://github.com/Andresfrla/vampires-vs-zombies',
+        image: '/projects/vampires.webp',
+        tags: ['HTML', 'CSS']
+    },
+]
+---
+
+{
+    PROJECTS.map(({title, description, tags, image }) => 
+        <article>
+            <h3 class="text-2xl font-semibold text-yellow-200 mb-2">{title}</h3>
+            <p class="text-lg mb-4 text-pretty">{description}</p>
+            <ul>
+                {tags.map(tag =>
+                    <li>{tag}</li>
+                )}
+            </ul>
+            <img class="rounded shadow-2xl shadow-white/20" src={image} alt={`Screenshoot of the project ${title}`}>
+        </article>
+    )
+}

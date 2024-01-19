@@ -8,19 +8,21 @@ import Certificate from '../components/icons/Certificate.astro'
 import SocialPill from "../components/SocialPill.astro"
 import Experience from '../components/Experience.astro';
 import SectionContainer from '../components/SectionContainer.astro';
+import Code from '../components/icons/Code.astro';
+import Projects from '../components/Projects.astro';
 ---
 
 <Layout
 title="Portfolio -Andres Franco L- Programmer and Web Developer"
 description="Hire a good programmer for your web or your mobile App">
-	<main>
+	<main class="px-4">
 		<SectionContainer class="py-44 pb-24">
 			<div class="flex justify-center">
 			<img class="rounded-full size-60 mb-7"
    			src="https://i.ibb.co/xgbs4mz/andres.jpg"
     		alt="Andres photo">
 			</div>
-			<h1 class="text-white text-5xl font-bold flex justify-start flex-row gap-x-4 pb-10">
+			<h1 class="text-white text-3xl md:text-4xl lg:text-5xl font-bold flex justify-start flex-row gap-x-4 pb-6 lg:pb-10">
 			Hi I'm Andres <div class="flex justify-center items-center">
 			<a
 			href="https://www.linkedin.com/in/andresfrancolangthon/"
@@ -29,28 +31,37 @@ description="Hire a good programmer for your web or your mobile App">
 			class="flex justify-center items-center"
 			>
 				<Badge> Available for hire</Badge></a></div></h1>
-			<h2 class="text-2xl opacity-80 text-wrap justifify-content">+7 years of Professional experience. <span class="text-red-300/90">Web Developer and business Administrator.</span>
+			<h2 class="text-xl lg:text-2xl opacity-80 text-wrap max-w-[700px] justifify-content">+7 years of Professional experience. <span class="text-red-300/90">Web Developer and business Administrator.</span>
 			<span class="text-yellow-200">From Bogota Colombia living in Mexico City.</span> I recently complete the Professional Certification of Meta.
 			</h2>
 
-			<nav class="flex gap-x-4 mt-8">
+			<nav class="flex gap-4 mt-8 flex-wrap">
 					<SocialPill href="https://www.linkedin.com/in/andresfrancolangthon/">
-						<LinkedinIcon class="size-6"/>LinkedIn </svg>
+						<LinkedinIcon class="size-4 lg:size-6"/>LinkedIn </svg>
 					</SocialPill>
 					<SocialPill href="https://github.com/Andresfrla">
-						<GithubIcon class="size-6"/>Github </svg>
+						<GithubIcon class="size-4 lg:size-6"/>Github </svg>
 					</SocialPill>
-					<SocialPill href="https://github.com/Andresfrla">
-						<GmailIcon class="size-6"/>andresfranla@gmail.com </svg>
+					<SocialPill href="mailto:andresfranla@gmail.com">
+						<GmailIcon class="size-4 lg:size-6"/>andresfranla@gmail.com </svg>
 					</SocialPill>
 			</nav>
 		</SectionContainer>
+
 		<SectionContainer id="experience">
 			<h2 class="text-2xl font-semibold mb-6 flex gap-x-3 item-center">
 				<Certificate class="size-8"/>
 				Certificates
 			</h2>
 			<Experience />
+		</SectionContainer>
+
+		<SectionContainer id="experience">
+			<h2 class="text-2xl font-semibold mb-6 flex gap-x-3 item-center">
+				<Code class="size-7"/>
+				Proyects
+			</h2>
+			<Projects />
 		</SectionContainer>
 	</main>
 </Layout>
