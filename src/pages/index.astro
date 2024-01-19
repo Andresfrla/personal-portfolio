@@ -10,6 +10,7 @@ import Experience from '../components/Experience.astro';
 import SectionContainer from '../components/SectionContainer.astro';
 import Code from '../components/icons/Code.astro';
 import Projects from '../components/Projects.astro';
+import Phone from '../components/icons/Phone.astro';
 ---
 
 <Layout
@@ -62,6 +63,26 @@ description="Hire a good programmer for your web or your mobile App">
 				Proyects
 			</h2>
 			<Projects/>
+		</SectionContainer>
+
+		<SectionContainer id="contact">
+			<h2 class="text-white text-3xl md:text-4xl lg:text-5xl font-bold flex justify-start flex-row gap-x-4 pb-6 lg:pb-10">
+				Let's get in touch
+			</h2>
+			<div class="flex gap-4 mt-8 flex-col">
+				<a class="flex flex-row mb-2" href="mailto:andresfranla@gmail.com">
+					<GmailIcon class="size-4 lg:size-6 mr-2"/> andresfranla@gmail.com </svg>
+				</a>
+				<a class="flex flex-row mb-2" href="https://github.com/Andresfrla">
+					<Phone class="size-4 lg:size-6 mr-2"/> +52 55 391 383 02 </svg>
+				</a>
+				<a class="flex flex-row mb-2" href="https://github.com/Andresfrla">
+					<GithubIcon class="size-4 lg:size-6 mr-2"/> Github </svg>
+				</a>
+				<a class="flex flex-row mb-2" href="https://www.linkedin.com/in/andresfrancolangthon/">
+					<LinkedinIcon class="size-4 lg:size-6 mr-2"/> Linkedin </svg>
+				</a>
+			</div>
 		</SectionContainer>
 	</main>
 </Layout>
