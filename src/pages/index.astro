@@ -5,13 +5,14 @@ import LinkedinIcon from "../components/icons/Linkedin.astro"
 import GithubIcon from '../components/icons/Github.astro';
 import GmailIcon from '../components/icons/Gmail.astro'
 import SocialPill from "../components/SocialPill.astro"
+import Experience from '../components/Experience.astro';
 ---
 
 <Layout
 title="Portfolio -Andres Franco L- Programmer and Web Developer"
 description="Hire a good programmer for your web or your mobile App">
 	<main>
-		<section class="w-full mx-auto lg:w-[740px] py-40">
+		<section class="w-full mx-auto lg:w-[740px] py-40 text-white">
 			<div class="flex justify-center">
 			<img class="rounded-full size-60 mb-7"
    			src="https://i.ibb.co/xgbs4mz/andres.jpg"
@@ -41,6 +42,9 @@ description="Hire a good programmer for your web or your mobile App">
 						<GmailIcon class="size-6"/>andresfranla@gmail.com </svg>
 					</SocialPill>
 			</nav>
+		</section>
+		<section>
+			<Experience />
 		</section>
 	</main>
 </Layout>
