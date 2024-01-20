@@ -11,7 +11,7 @@ import Link from './icons/Link.astro'
 
 const TAGS = {
     REACT: {
-        name: "React Js",
+        name: "React.Js",
         class: "bg-blue-900 text-red",
         icon: React,
     },
@@ -26,7 +26,7 @@ const TAGS = {
         icon: Css,
     },
     MONGODB: {
-        name: "Mongo DB",
+        name: "MongoDB",
         class: "bg-green-700 text-white",
         icon: MongoDB,
     },
@@ -45,17 +45,6 @@ const TAGS = {
         class: "bg-black text-white",
         icon: Vite
     },
-}
-
-const DEPLOYS = {
-    GITHUB: {
-        name: "Github",
-        icon: Github
-    },
-    LINK: {
-        name: "Link",
-        icon: Link
-    }
 }
 
 const PROJECTS = [
@@ -102,7 +91,7 @@ const PROJECTS = [
             <ul class="flex gap-x-2 lg:flex-row mb-2 sm:flex-wrap">
                 {tags.map((tag) => (
                     <li>
-                        <span class={`flex gap-x-2 rounded-full text-s mb-2 mt-3 ${tag.class} py-1 px-2`}>
+                        <span class={`flex flex-wrap gap-x-2 rounded-full sm:text-sm md:text-s mb-2 mt-3 ${tag.class} py-1 px-2`}>
                             <tag.icon class="size-5" />
                             {tag.name}
                         </span>
