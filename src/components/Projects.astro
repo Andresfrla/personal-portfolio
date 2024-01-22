@@ -73,6 +73,14 @@ const PROJECTS = [
         tags: [TAGS.HTML, TAGS.CSS]
     },
     {
+        title: 'Youtube Clone',
+        description: 'Using the integration of an API to search diferent videos I make an app to have different categories and videos to show.',
+        link: 'https://celadon-dieffenbachia-3463e0.netlify.app/',
+        github: 'https://github.com/Andresfrla/youtube_clone',
+        image: '/projects/youtube.webp',
+        tags: [TAGS.REACT, TAGS.HTML, TAGS.CSS],
+    },
+    {
         title: 'Basic E-commerce',
         description: 'This basic e-commerce build using vite and React Js uses the different states to add products to the shopping cart',
         link: '',
@@ -91,8 +99,8 @@ const PROJECTS = [
             <ul class="flex gap-x-2 lg:flex-row mb-2 sm:flex-wrap">
                 {tags.map((tag) => (
                     <li>
-                        <span class={`flex flex-wrap gap-x-2 rounded-full sm:text-sm md:text-s mb-2 mt-3 ${tag.class} py-1 px-2`}>
-                            <tag.icon class="size-5" />
+                        <span class={`flex flex-wrap gap-x-2 rounded-full sm:text-xxs md:text-s mb-2 mt-3 ${tag.class} py-1 px-2`}>
+                            <tag.icon class={`size-5 ${'sm:text-xxs'}`} />
                             {tag.name}
                         </span>
                     </li>
