@@ -8,12 +8,25 @@ import Handlebars from './icons/Handlebars.astro'
 import Vite from './icons/Vite.astro'
 import Github from './icons/Github.astro'
 import Link from './icons/Link.astro'
+import Tailwind from './icons/Tailwind.astro'
+import Typescript from './icons/Typescript.astro'
+import Nextjs from './icons/Nextjs.astro'
 
 const TAGS = {
     REACT: {
         name: "React.Js",
         class: "bg-blue-900 text-red",
         icon: React,
+    },
+    TYPESCRIPT: {
+        name: "TypeScript",
+        class: "bg-zinc-100 text-blue",
+        icon: Typescript,
+    },
+    NEXTJS: {
+        name: "Next Js",
+        class: "bg-zinc-100 text-black",
+        icon: Nextjs,
     },
     HTML: {
         name: "HTML",
@@ -24,6 +37,11 @@ const TAGS = {
         name: "CSS",
         class: "bg-sky-950 text-white",
         icon: Css,
+    },
+    TAILWIND: {
+        name: "Tailwind",
+        class: "bg-black-600 text-white",
+        icon: Tailwind,
     },
     MONGODB: {
         name: "MongoDB",
@@ -49,12 +67,12 @@ const TAGS = {
 
 const PROJECTS = [
     {
-        title: 'Unibook-Pro. for Jeblush',
-        description: 'Created from scratch with React.Developed a full-stack RESTful application for a renowned beauty salon in Mexico City, designed to streamline their service reservations.',
-        link: 'https://unibookpro-app.netlify.app/',
-        github: 'https://github.com/Andresfrla/unibook-pro-client',
-        image: '/projects/jeblush.webp',
-        tags: [TAGS.REACT, TAGS.HTML, TAGS.MONGODB, TAGS.NODEJS],
+        title: 'DigitalHippo',
+        description: 'Created from scratch with React and Next.Js.Developed a full-stack RESTful application that is a Ecommerce where you can buy and sell assets of quality.',
+        link: 'https://digitalhippo-final.up.railway.app/',
+        github: 'https://github.com/Andresfrla/digital_hippo',
+        image: '/projects/digital-hippo.webp',
+        tags: [TAGS.REACT, TAGS.NEXTJS, TAGS.MONGODB, TAGS.TAILWIND],
     },
     {
         title: 'LOL-Wiki',
