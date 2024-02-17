@@ -106,7 +106,9 @@ const PROJECTS = [
         <article>
             <h3 class="text-2xl font-semibold text-yellow-200 mb-2">{title}</h3>
             <p class="text-lg mb-4 text-pretty text-justify">{description}</p>
+            <p class="text-red-300/90">Used technologies:</p>
             <ul class="flex gap-x-2 lg:flex-row mb-2 sm:flex-wrap">
+                
                 {tags.map((tag) => (
                     <li>
                         <span class={`flex flex-wrap gap-x-2 rounded-full sm:text-xxs md:text-s mb-2 mt-3 ${tag.class} py-1 px-2`}>
